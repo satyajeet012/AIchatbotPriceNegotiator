@@ -6,7 +6,7 @@ import re
 app = Flask(__name__)
 
 
-# Your existing chatbot code here...
+
 try:
     client = MongoClient('mongodb+srv://vaghelajigneshcan0205:123Durham@cluster0.liiiog9.mongodb.net/')
     db = client['ProductDB']
@@ -74,8 +74,6 @@ def negotiate_price(user_input, current_product):
         return "How much lower are you proposing? Please provide a specific amount.", current_product, "negotiate"
 
 
-
-# Your existing chatbot code here...
 current_product = None
 negotiation_state = None
 
